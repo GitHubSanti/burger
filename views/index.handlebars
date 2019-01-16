@@ -1,10 +1,26 @@
-{{#each allBurgers}}
-    <div class="row">
-        <div class="col">
-            <p class="lead">{{burger_name}}</p>
-        </div>
-        <div class="col">
-            <button type="button" class="btn btn-secondary">Devour it!</button>
-        </div>
-    </div>
-{{/each}}
+
+{{!-- not devoured column --}}
+<div class="row">
+	<div class="col">
+		{{#each allBurgers}}
+			{{#unless devoured}}
+			    <div class="row">
+        			<div class="col">
+            			<p class="lead">{{burger_name}}</p>
+        			</div>
+        			<div class="col">
+            			<button type="button" class="btn btn-secondary">Devour it!</button>
+        			</div>
+    			</div>
+			{{/unless}}
+		{{/each}}
+	</div>
+{{!-- devoured column --}}
+	<div class="col">
+		{{#each allBurgers}}
+			{{#if devoured}}
+				<p class="lead">{{burger_name}} has been devoured!</p>
+			{{/if}}
+		{{/each}}
+	</div>
+</div>
