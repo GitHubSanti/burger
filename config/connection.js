@@ -1,5 +1,4 @@
 // Used to mask MySQL Creds
-let db =  require("./MySQLCredentials.js")
 require("dotenv").config();
 var mysql = require("mysql");
 var connection;
@@ -9,8 +8,8 @@ if (process.env.JAWSDB_URL) {
   connection = mysql.createConnection({
     host: "localhost",
     port: 3306,
-    user: db.username,
-    password: db.password,
+    user: process.env.SQL_USERNAME,
+    password: process.env.SQL_SECRET,
     database: "burgers_db"
   });
 };
@@ -21,6 +20,9 @@ connection.connect(function(err) {
     return;
   }
   console.log("connected as id " + connection.threadId);
+  console.log(connection.config.user);
+  console.log(connection.config.password);
+  console.log(connection.config.port);
 });
 
 module.exports = connection;
