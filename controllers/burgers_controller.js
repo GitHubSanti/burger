@@ -14,15 +14,6 @@ router.get("/", function(req, res) {
     };
     res.render("index", hbsObject);
   });
-
-  // orm.selectAll("burgers", function(data) {
-  // 	console.log("from orm.js file");
-  // 	console.log(data);
-  // 	var hbsObject = {
-  // 		allBurgers: data
-  // 	};
-  // 	res.render("index", hbsObject);
-  // });
 });
 
 router.post("/api/burgers", function(req, res) {
