@@ -1,12 +1,16 @@
 // Used to mask API Keys
 // require("dotenv").config();
+let db =  require("./MySQLCredentials.js")
+
 var mysql = require("mysql");
+console.log(db.username);
+console.log(db.password);
 
 var connection = mysql.createConnection({
   host: "localhost",
   port: 3306,
-  user: "root",
-  password: "psci",
+  user: db.username,
+  password: db.password,
   database: "burgers_db"
 });
 
