@@ -1,10 +1,7 @@
-// Used to mask API Keys
-// require("dotenv").config();
+// Used to mask MySQL Creds
 let db =  require("./MySQLCredentials.js")
 
 var mysql = require("mysql");
-console.log(db.username);
-console.log(db.password);
 
 var connection = mysql.createConnection({
   host: "localhost",
