@@ -20,9 +20,9 @@ connection.connect(function(err) {
     return;
   }
   console.log("connected as id " + connection.threadId);
-  console.log(connection.config.user);
-  console.log(connection.config.password);
-  console.log(connection.config.port);
+  console.log("PORT: " + connection.config.port);
+  console.log("Database: " + connection.config.database);
+  console.log("User: " + connection.config.user);
 });
 
 module.exports = connection;
