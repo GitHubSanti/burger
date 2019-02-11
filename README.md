@@ -13,4 +13,4 @@ Found within the [db folder](https://github.com/GitHubSanti/burger/tree/master/d
 * Google Awesome Font
 * Basscss
 
-## [Eat-Da-Burger! Heroku Deployed App Link](https://mighty-temple-83436.herokuapp.com/)
+### [Eat-Da-Burger! Heroku Deployed App Link](https://mighty-temple-83436.herokuapp.com/)
