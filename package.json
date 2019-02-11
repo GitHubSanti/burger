@@ -6,7 +6,7 @@
   "scripts": {
     "test": "echo \"Error: no test specified\" && exit 1",
     "start": "node server.js",
-    "dev": "echo \"Starting DEVELOPMENT MODE BITCHES\" && nodemon server.js"
+    "dev": "echo \"DEVELOPMENT MODE\" && nodemon server.js"
   },
   "repository": {
     "type": "git",
