@@ -6,10 +6,10 @@
 		{{#unless devoured}}
 		<div class="row">
 			<div class="col">
-				<p class="lead" style="font-family: 'Sigmar One', cursive;">{{burger_name}}</p>
+				<p class="lead">{{burger_name}}</p>
 			</div>
 			<div class="col">
-				<button type="button" class="btn bg-yellow mb-2 devourBurger" id="{{id}}">Devour it!</button>
+				<button type="button" class="btn bg-blue white mb-2 devourBurger" id="{{id}}">Devour it!</button>
 			</div>
 		</div>
 		{{/unless}}
@@ -19,18 +19,18 @@
 	<div class="col">
 		{{#each allBurgers}}
 		{{#if devoured}}
-		<p class="lead" style="font-family: 'Sigmar One', cursive;">{{burger_name}} has been devoured!</p>
+		<p class="lead">{{burger_name}} has been devoured!</p>
 		{{/if}}
 		{{/each}}
 	</div>
 </div>
-<form class="create-form mt-3">
+<form class="create-form my-3">
 	<div class="row justify-content-center">
 		<div class="col-5">
-			<input type="text" class="form-control bg-yellow my-2" id="newBurger" placeholder="">
+			<input type="text" class="form-control my-2" id="newBurger" placeholder="">
 		</div>
 		<div class="col-2">
-			<button type="submit" class="btn bg-yellow my-2" id="addBurger">Add Burger!</button>
+			<button type="submit" class="btn bg-blue white my-2" id="addBurger">Add Burger!</button>
 		</div>
 	</div>
 </form>
